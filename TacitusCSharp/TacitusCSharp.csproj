@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CB492C7F-9D65-4059-AFA4-96DEA43AE537}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TacitusCSharp</RootNamespace>
+    <AssemblyName>TacitusCSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addLink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addNode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkForNode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkForTaskNode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cloneState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteLink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteNode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="drawMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="drawTaskManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditNodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditNodeForm.Designer.cs">
+      <DependentUpon>EditNodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProjectForm.Designer.cs">
+      <DependentUpon>EditProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homeForm.Designer.cs">
+      <DependentUpon>homeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homeFormVariables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="importLinks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="importNodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="importProjectPath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="link.cs" />
+    <Compile Include="listArchivedProjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listProjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newProjectForm.Designer.cs">
+      <DependentUpon>newProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="node.cs" />
+    <Compile Include="nodesLinks.cs" />
+    <Compile Include="nodeTransition.cs" />
+    <Compile Include="openProjectDialog.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="project.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recordUndoState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="saveChanges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectLastProjectSaved.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sortNodesLinks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="taskManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="taskManagerForm.Designer.cs">
+      <DependentUpon>taskManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="transitionMethods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="undoState.cs" />
+    <Compile Include="updateNode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="EditNodeForm.resx">
+      <DependentUpon>EditNodeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProjectForm.resx">
+      <DependentUpon>EditProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homeForm.resx">
+      <DependentUpon>homeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newProjectForm.resx">
+      <DependentUpon>newProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="taskManagerForm.resx">
+      <DependentUpon>taskManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
